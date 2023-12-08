@@ -80,10 +80,12 @@ public class HttpClientUtility {
 			}
 			in.close();
 			String contentStr = content.toString();
-			System.out.println("\n\n\tcontent : "+ contentStr);
 			int index =  contentStr.indexOf("\"customer\":");
 			String customerStr = contentStr.substring(index+11);
-			Customer customer = JsonUtility.jsonToCustomer(customerStr);
+			Customer customer = null;
+			if (status < 300 && index > -1) {
+				customer = JsonUtility.jsonToCustomer(customerStr);
+			}
 			retrieveCustomerResponse = new RetrieveCustomerResponse(status, contentStr, customer);
 			connection.disconnect();
 	    }catch (Exception e){

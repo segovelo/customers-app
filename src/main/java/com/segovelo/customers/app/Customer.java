@@ -1,28 +1,40 @@
 package com.segovelo.customers.app;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 /** 
 * 8 Dec 2023
 * @Javadoc TODO 
 *
 * @author Segovelo  **/
-
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Customer {
 
+	@JsonProperty("customerRef")
 	private String customerRef;
 		
+	@JsonProperty("customerName")
 	private String customerName;
 	
+	@JsonProperty("addressLine1")
 	private String addressLine1;
 	
+	@JsonProperty("addressLine2")
 	private String addressLine2;
 	
+	@JsonProperty("town")
 	private String town;
 	
+	@JsonProperty("county")
 	private String county;
 	
+	@JsonProperty("country")
 	private String country;
 	
+	@JsonProperty("postcode")
 	private String postcode;
 
 	public String getCustomerRef() {
