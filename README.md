@@ -12,11 +12,11 @@ In case the insertion into DB fails the customers-app will display response from
 ![image](https://github.com/segovelo/customers-app/assets/44499182/af96b722-47fb-4c5e-905f-19a824f3cc2e)
 
 The second feature is the ability to retrieve a customer passing the customerRef in a text field and by clicking 
-a get customer button the app will make GET request to API. When a customer is prsent in DB for the passed customer ref, API will return response with 200 code, message and customer found.
+a get customer button the app will make GET request to API. When a customer is present in DB for the passed customer ref, API will return response with 200 code, message and customer found.
 
 ![image](https://github.com/segovelo/customers-app/assets/44499182/6522fdae-00ba-4487-a8b7-350bfc2e45b6)
 
-The customers-app will handle if there is no customer present in DB by display 404 code and message accorndingly.
+The customers-app will handle response from API if there is no customer present in DB by displaying 404 code and message accorndingly.
 
 ![image](https://github.com/segovelo/customers-app/assets/44499182/5bc95ee5-75a5-4db5-bafd-173c95cea5de)
 
