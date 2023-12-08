@@ -1,4 +1,4 @@
-#customers-app
+# customers-app
 This is a console app implemented with Swing to connect to customers-api. The app features a button to load csv files from local drive and a send file button to post an array of Customers in Json format to customers-api POST /customers/save endpoint
 
 ![image](https://github.com/segovelo/customers-app/assets/44499182/b6dfbb73-022b-4043-87fd-c76792aa6f63)
