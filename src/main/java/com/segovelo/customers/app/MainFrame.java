@@ -38,7 +38,7 @@ public class MainFrame extends JFrame {
 	   saveBtnPane.setBorder(BorderFactory.createEmptyBorder(10, 30, 20, 80));
 	   saveBtnPane.add(Box.createHorizontalGlue());
 	   btnLoadFile = new JButton("Load File"); 	    
-	   btnSentFile = new JButton("Sent File"); 
+	   btnSentFile = new JButton("Send File"); 
 	   saveBtnPane.add(btnLoadFile);	   
 	   saveBtnPane.add(Box.createRigidArea(new Dimension(250, 0)));
 	   saveBtnPane.add(btnSentFile);
